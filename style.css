@@ -1,0 +1,404 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Geomanist;
+    src: url("Asset/font/Geomanist-Medium.woff");
+
+}
+
+@font-face {
+    font-family: Book;
+    src: url("Asset/font/Geomanist-Book.woff");
+
+}
+
+@font-face {
+    font-family: Geomanist-light;
+    src: url("Asset/font/Geomanist-Light.woff");
+}
+
+@font-face {
+    font-family: Geomanist-Regular;
+    src: url("Asset/font/Geomanist-Regular.woff");
+}
+
+@font-face {
+    font-family: LibreBaskerville;
+    src: url("Asset/font/LibreBaskerville-Regular.woff");
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    background: url("Asset/home page.jpg");
+    background-size: cover;
+    /* background-position: center; */
+    width: 100%;
+    height: 100vh;
+}
+
+nav {
+    display: flex;
+    width: 80%;
+    margin: 0px auto;
+    height: 100px;
+    align-items: center;
+
+}
+
+.navlinks {
+    width: 100%;
+    display: flex;
+    gap: 76px;
+    align-items: center;
+    /* background: #000; */
+}
+
+.links ul a {
+    text-decoration: none;
+    font-size: 16px;
+    padding-left: 48px;
+    font-family: Geomanist;
+    color: #3a3a3a;
+}
+
+.phone {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    gap: 10px;
+}
+
+.phone a {
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+    font-family: Geomanist;
+}
+
+.phone i {
+    background: transparent;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.phone i {
+    padding: 4px;
+    color: white;
+}
+
+.hero {
+    /* background: #000; */
+    width: 80%;
+    padding-top: 140px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.hero h2 {
+    color: #2b2a2a;
+    font-size: 80px;
+    width: 40%;
+    font-family: Geomanist-light;
+    font-weight: 100;
+    line-height: 80px;
+
+}
+
+.hero h4 {
+    font-size: 30px;
+    width: 100%;
+    font-family: Geomanist-Regular;
+    font-weight: 100;
+    line-height: 80px;
+    color: #616161;
+
+}
+
+.hero h2 span {
+    font-family: Geomanist;
+}
+
+.line {
+    width: 8%;
+    border-radius: 5px;
+    height: 5px;
+    background: #ef375d;
+}
+
+.hero_botton {
+    color: white;
+    font-family: Geomanist;
+    font-size: 16px;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    width: 20%;
+    height: 80px;
+    border: none;
+    background: rgb(250, 29, 143);
+    background: -moz-linear-gradient(135deg, rgba(250, 29, 143, 1) 0%, rgba(23, 94, 173, 1) 100%);
+    background: -webkit-linear-gradient(135deg, rgba(250, 29, 143, 1) 0%, rgba(23, 94, 173, 1) 100%);
+    background: linear-gradient(135deg, rgba(250, 29, 143, 1) 0%, rgba(23, 94, 173, 1) 100%);
+
+
+}
+
+form {
+    
+    width: 80%;
+    height: 240px;
+    background: white;
+    z-index: 2;
+    position: absolute;
+    top: 90vh;
+    left: 50%;
+    border-radius: 5px;
+    transform: translatex(-50%);
+    -webkit-box-shadow: 9px 25px 54px -23px rgba(0,0,0,0.62);
+-moz-box-shadow: 9px 25px 54px -23px rgba(0,0,0,0.62);
+box-shadow: 9px 25px 54px -23px rgba(0,0,0,0.62);
+}
+
+#form {
+    display: flex;
+    gap: 20px;
+    padding: 50px 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#form .describ h2 {
+    font-family: LibreBaskerville;
+    font-size: 20px;
+}
+
+#form .describ h3 {
+    font-size: 50px;
+    width: 380px;
+    color: #2a2a2a;
+    font-family: Geomanist-light;
+}
+
+#form .describ h3 span {
+    font-family: Book;
+    color: #2a2a2a;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+    height: 100%;
+    width: 380px;
+    /* background: #3a3a3a; */
+
+}
+
+.name label {
+    color: #2b2a2a;
+    
+   display: flex;
+   gap: 10px;
+   font-size: 16px;
+   width: 100%;
+   font-family: Book;
+}
+.name label a{
+    text-decoration: none;
+}
+.name label input{
+    width: 20px;
+    height: 20px;
+    background: transparent;
+
+ }
+
+.email input,
+.name input {
+    height: 40px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-bottom: 2px solid #484848;
+    padding-bottom: 17px;
+
+
+}
+#email input{
+    height: 40px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-bottom: 2px solid #484848;
+    padding-bottom: 17px;
+
+
+}
+.email {
+    width: 380px;
+    height: 100%;
+    /* background: #616161; */
+    display: flex;
+    flex-direction: column;
+    gap: 15%;
+    justify-content: flex-start;
+}
+
+input::placeholder {
+    color: #9d9d9d;
+    font-size: 16px;
+}
+
+input:focus,
+input:valid {
+    border-color:#fa1d8f;
+    outline-color: #fa1d8f;
+    /* background: transparent; */
+}
+
+#submit {
+    width: 380px;
+    height: 100%;
+    font-size: 16px;
+    color: white;
+    font-family: Geomanist;
+    letter-spacing: 3px;
+    border-radius: 10px;
+    border: none;
+    background: rgb(255, 179, 6);
+    background: -moz-linear-gradient(135deg, rgba(255, 179, 6, 1) 0%, rgba(108, 164, 47, 1) 76%);
+    background: -webkit-linear-gradient(135deg, rgba(255, 179, 6, 1) 0%, rgba(108, 164, 47, 1) 76%);
+    background: linear-gradient(135deg, rgba(255, 179, 6, 1) 0%, rgba(108, 164, 47, 1) 76%);
+  
+
+}
+
+.first_page{
+    background: url("Asset/Home-page.png");
+    height: 120vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.firstpage_content{
+    width: 80%;
+    margin: auto;
+    gap: 6%;
+    padding-top: 228px;
+    display: flex;
+   *{
+    flex: 25%;
+   } 
+}
+.first_colum{
+    flex: 20%;
+    /* background: #3a3a3a; */
+}
+
+.first_colum h3{
+    margin-top: 40px;
+    color: #2b2a2a;
+    font-size: 70px;
+    width: 100%;
+    font-family: Geomanist-light;
+   
+   }
+   .first_colum h3 span{
+    font-family: Book;
+    color: #2b2a2a;
+   }
+
+.line{
+    margin-top: 30px;
+    position: relative;
+    right: 28px;
+    width: 100px;
+    border-radius: 5px;
+    height: 5px;
+    background: #ef375d;
+ 
+}
+.third_colum .image,.second_colum .image {
+  width: 100%;
+  height: 70%;
+}
+.second_colum .image img {
+    width: 100%;
+    height: 100%;
+  }
+  .third_colum .image img {
+    margin-top: 74px;
+    width: 100%;
+    height: 100%;
+  }
+  .second_colum .content{
+    margin-top: 74px;
+    color: #2b2a2a;
+  }
+  .third_colum .content{
+    color: #2b2a2a;
+  }
+  .third_colum .content h2, .second_colum .content h2{
+   font-family: Geomanist-light;
+   font-size: 45px;
+   width: 80%;
+
+  }
+  .third_colum .content h3, .second_colum .content h3{
+    font-family: Book;
+    font-size: 24px;
+    width: 100%;
+    margin-top: 31px;
+    
+ 
+   }
+   .third_colum .content p, .second_colum .content p{
+    font-family: Geomanist-light;
+    font-size: 18px;
+    width: 100%;
+    margin-top: 24px;
+ 
+   }
+  .third_colum .content span, .second_colum .content span{
+ font-family: Book;
+ color: #616161;  }
+
+ .secondpage{
+    background: url("Asset/Home-page3.png");
+    width: 100%;
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+ }
+ .secondpage_content{
+    width: 80%;
+    margin: auto;
+    padding-top: 160px;
+ }
+ .htwo{
+    font-size: 27px;
+    color: red;
+ }
+ .secondpage_content h3{
+    width: 35%;
+    line-height: 75px;
+    font-family: Geomanist-light;
+    font-size: 70px;
+    color: whitesmoke;
+ }
+ .secondpage_content h3 span{
+    font-family: Book;
+ }
