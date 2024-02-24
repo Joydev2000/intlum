@@ -930,7 +930,6 @@ top: 20px !important;
     font-size: 30px;
     border-radius: 5px;
     border: none;
-    
     background: -moz-linear-gradient(135deg, rgba(250, 29, 143, 1) 0%, rgba(23, 94, 173, 1) 100%);
     background: -webkit-linear-gradient(135deg, rgba(250, 29, 143, 1) 0%, rgba(23, 94, 173, 1) 100%);
     background: linear-gradient(135deg, rgba(250, 29, 143, 1) 0%, rgba(23, 94, 173, 1) 100%)
@@ -950,7 +949,7 @@ top: 20px !important;
   .secondpage, header {
     background-position: center;
 }
-.secondpage
+
  nav{
   position: fixed;
   background: -moz-linear-gradient(135deg, rgba(250, 29, 143, 1) 0%, rgba(23, 94, 173, 1) 100%);
