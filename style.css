@@ -47,21 +47,32 @@ header {
 
 nav {
     display: flex;
-    width: 80%;
+    justify-content: space-between;
+    width: 100%;
     margin: 0px auto;
     height: 100px;
     align-items: center;
+    padding-inline: 10%;
+    top: 0;
+    z-index: 3;
+    background:transparent;
+    gap: 40px;
 
 }
-
-.navlinks {
-    width: 100%;
-    display: flex;
-    gap: 76px;
-    align-items: center;
-    /* background: #000; */
+.mobile_menu{
+  width: 100%;
 }
-
+.links{
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.links ul{
+  display: flex;
+ gap: 10px;
+}
 .links ul a {
     text-decoration: none;
     font-size: 16px;
@@ -98,7 +109,7 @@ nav {
 .hero {
     /* background: #000; */
     width: 80%;
-    padding-top: 140px;
+    padding-top: 240px;
     margin: 0px auto;
     display: flex;
     flex-direction: column;
@@ -486,7 +497,7 @@ input:valid {
     position: absolute;
     z-index: 2;
     left: 10%;
-    bottom: -16%;
+    bottom: -10%;
     transition: .5s ease-in-out;
 }
 .box:hover .content_box{
@@ -671,7 +682,8 @@ input:valid {
   .steps .step .circle {
     color: white;
     background: #845b39;
-    border: 2px solid #ffffff;
+   border: 2px dotted #f2e704;
+
     border-radius: 20px;
     -moz-border-radius: 20px;
     -webkit-border-radius: 20px;
@@ -683,14 +695,10 @@ input:valid {
     text-align: center;
     width: 40px;
     z-index: 500;
-    border-style: dotted dashed solid double;
+    border-style: ;
   }
   
-  .steps .step .circle.active {
-    background: #323085;
-    border: 2px solid #323085;
-    color: #FFFFFF;
-  }
+
   
   .steps .step .circle.complete {
     background: #f4f3f1;
@@ -705,11 +713,7 @@ input:valid {
     margin-top: 10px;
   }
   
-  @media screen and (max-width: 768px) {
-   .responsive_hide {
-     display: none; visibility: hidden; opacity: 0;
-   } 
-  }
+
 
   /* end fifthpage */
 
@@ -831,66 +835,44 @@ input:valid {
     display: none;
 }
 
-  .text-center {
-    text-align:center;
-    
-  }
-  h2,h1 {
-    margin:0;
-    padding-top:30px;
-  }
-  
-  .bg-color {
-    background: var(--bg-color);
-  }
-  
-  .half-color-box {
-    background: var(--gradient);
-    
-    margin-bottom: 100px;
-  }
-  
-  .text-whtie {
-    color: #fff !important;
-  }
-  
-  .bold {
-    font-weight: bolder;
-  }
-  
-  .por {
-    position: relative;
-  }
-  
-  .review-box .quote {
-    position: absolute;
-    width: 40px;
-    right: 10px;
-    bottom: 10px;
-  }
+ .swiper-pagination{
+position: relative !important;
+top: 20px !important;
+ }
   
   
   .review-box {
     border-radius: 3px;
     background: #fff;
     box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.1);
-    padding: 10px;
+    padding: 30px;
     
   }
   .review-box .feedback p {
    font-size: 20px;
    font-family:Geomanist-light;
-   width: 100%;
+   width: 80%;
    color: #2b2a2a;
-   font-weight: 400;
+   font-weight: 500;
    line-height: 25px;
   }
   .feddback_user{
     display: flex;
     align-items: center;
-    width: 100%;
+    width: 80%;
     height: 100px;
     gap: 30px;
+    margin-top: 20px;
+   
+   
+  }
+  hr{
+    margin-top: 60px;
+    height: 1px;
+    background-color: #dbd5d5;
+    display: block;
+	 clear: both;
+   border: none;
   }
   .feddback_user .userimage{
     width: 50px;
@@ -902,37 +884,28 @@ input:valid {
     object-fit: cover;
     border-radius: 50%;
   }
+ 
+  .userdetails h2{
+   margin-top: 0;
+   font-size: 22px;
+   font-family: Book;
+  }
+  .userdetails h2{
+    margin-top: 0;
+    font-size: 22px;
+    font-family: Book;
+   }
+   .userdetails h4{
+    margin-top: 0;
+    font-size:16px;
+    font-family:Geomanist-light ;
+    font-weight: 200;
+   }
   .swiper-testimonial {
     padding: 100px 20px;
     padding-top: 30px;
   }
   
-  .half-color-box {
-    background: var(--gradient);
-    height: 300px;
-    margin-bottom: 140px;
-  }
- 
-  
-
-  .arrow-right {
-    transform: rotate(180deg);
-    margin-top: -8px;
-  }
-  
-  .arrow {
-    cursor: pointer;
-    transition: all 0.2s ease-in;
-  }
-  
-  .arrow:hover {
-    transform: translateX(-15px);
-  }
-  .buttonswiper{
-    position: absolute;
-    bottom: 50px;
-    z-index: 2222;
-  }
   .test-arrowbox{
     display: flex;
     gap: 30px;
@@ -957,8 +930,77 @@ input:valid {
     font-size: 30px;
     border-radius: 5px;
     border: none;
-    background: #fa1d8f;
+    
     background: -moz-linear-gradient(135deg, rgba(250, 29, 143, 1) 0%, rgba(23, 94, 173, 1) 100%);
     background: -webkit-linear-gradient(135deg, rgba(250, 29, 143, 1) 0%, rgba(23, 94, 173, 1) 100%);
     background: linear-gradient(135deg, rgba(250, 29, 143, 1) 0%, rgba(23, 94, 173, 1) 100%)
   }
+
+/* responsive start */
+.menu{
+  display: none;
+}
+.close{
+  display: none;
+}
+@media screen and (max-width: 1410px) {
+  .row{
+    flex-direction: column;
+  }
+  .secondpage, header {
+    background-position: center;
+}
+.secondpage
+ nav{
+  position: fixed;
+  background: -moz-linear-gradient(135deg, rgba(250, 29, 143, 1) 0%, rgba(23, 94, 173, 1) 100%);
+  background: -webkit-linear-gradient(135deg, rgba(250, 29, 143, 1) 0%, rgba(23, 94, 173, 1) 100%);
+  background: linear-gradient(135deg, rgba(250, 29, 143, 1) 0%, rgba(23, 94, 173, 1) 100%);
+ }
+ .mobile_menu{
+  transform: translatex(100%);
+  position: fixed;
+	z-index: 5;
+	top: 0;
+	right: 0;
+	width: 50%;
+	height: 100vh;
+ }
+ .links{
+  display: flex;
+  flex-direction: column;
+  padding: 10% 0;
+  width: 100%;
+  height: 100%;
+  background: -moz-linear-gradient(135deg, rgba(250, 29, 143, 1) 0%, rgba(23, 94, 173, 1) 100%);
+  background: -webkit-linear-gradient(135deg, rgba(250, 29, 143, 1) 0%, rgba(23, 94, 173, 1) 100%);
+  background: linear-gradient(135deg, rgba(250, 29, 143, 1) 0%, rgba(23, 94, 173, 1) 100%);
+ }
+ .links ul{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+ }
+ .links ul a{
+  color: white;
+ }
+ .close{
+  position: absolute;
+  top:0;
+  left: 0;
+  display: block;
+ }
+ .close i {
+  font-size: 10vw;
+  color: white;
+  cursor: pointer;
+ }
+.menu i{
+font-size: 40px;
+color: white;
+}
+.menu{
+  display: block;
+}
+}

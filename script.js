@@ -1,11 +1,3 @@
-document.addEventListener("DOMContentLoaded",function(){
-    document.getElementById("number").addEventListener("wheel",
-      function (event) {
-          event.preventDefault();
-          
-      });
-  
-  });
 
   $(document).ready(function(){
     $(".qtwo").click(function(){
@@ -45,3 +37,20 @@ var swiper = new Swiper('.swiper-container.swiper-testimonial', {
         prevEl: '.swiper-button-prev-test',
     },
 });
+
+
+$(document).ready(function () {
+    var open = $(".menu");
+    var close = $(".close");
+    var menu = $(".mobile_menu");
+    open.click(function () {
+      menu.css({ "transform": "translateX(0px)", "transition": "1s ease" });
+      $("body").css("overflow", "hidden");
+    });
+  
+    close.click(function () {
+      menu.css({ "transform": "translateX(100%)", "transition": "1s ease" });
+      $("body").css("overflow", "auto");
+    });
+  
+  });
