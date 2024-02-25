@@ -50,7 +50,7 @@ nav {
     justify-content: space-between;
     width: 100%;
     margin: 0px auto;
-    height: 100px;
+    height: 80px;
     align-items: center;
     padding-inline: 10%;
     top: 0;
@@ -299,7 +299,8 @@ input:valid {
 
 .first_page{
     background: url("Asset/Home-page.png");
-    height: 150vh;
+    height: max-content;
+    padding-bottom: 100px;
     width: 100%;
     background-position: center;
     background-size: cover;
@@ -310,8 +311,9 @@ input:valid {
     gap: 6%;
     padding-top: 228px;
     display: flex;
+    flex-wrap: wrap;
    *{
-    flex: 25%;
+    flex: 30%;
    } 
 }
 .first_colum{
@@ -320,7 +322,7 @@ input:valid {
 }
 
 .first_colum h3{
-    margin-top: 40px;
+    padding-top: 40px;
     color: #2b2a2a;
     font-size: 70px;
     width: 100%;
@@ -345,20 +347,23 @@ input:valid {
  
 }
 .third_colum .image,.second_colum .image {
-  width: 100%;
-  height: 65%;
+  
+ /* height: 550px; */
+ 
 }
 .second_colum .image img {
     width: 100%;
-    height: 100%;
+    min-height: 100%;
+  }
+  .third_colum .image{
+    margin-top: 100px;
   }
   .third_colum .image img {
-    margin-top: 74px;
     width: 100%;
     height: 100%;
   }
   .second_colum .content{
-    margin-top: 74px;
+    padding-top: 40px;
     color: #2b2a2a;
   }
   .third_colum .content{
@@ -375,7 +380,7 @@ input:valid {
     font-family: Book;
     font-size: 24px;
     width: 100%;
-    margin-top: 31px;
+    padding-top: 31px;
     
  
    }
@@ -383,7 +388,7 @@ input:valid {
     font-family: Geomanist-light;
     font-size: 18px;
     width: 100%;
-    margin-top: 24px;
+   padding-top: 24px;
  
    }
   .third_colum .content span, .second_colum .content span, .first_box p span{
@@ -393,15 +398,17 @@ input:valid {
  .secondpage{
     background: url("Asset/Home-page3.png");
     width: 100%;
-    height: 70vh;
+    height: fit-content;
     background-size: cover;
     display: flex;
     align-items: center;
+    padding-bottom: 100px;
     
  }
  .secondpage_content{
     width: 80%;
     margin: auto;
+    padding-top: 110px;
     
  }
  .htwo{
@@ -457,12 +464,12 @@ input:valid {
     margin-top: 110px;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
     gap: 60px;
 	
  }
  .box{
-    height: 500px;
+    min-height: 514px;
     position: relative;
     overflow: hidden;
     /* background: #000; */
@@ -632,7 +639,8 @@ input:valid {
     background: url("Asset/Home-page5.png");
     background-size: cover;
     width: 100%;
-    height: 80vh;
+    height: fit-content;
+    padding-bottom: 100px;
  }
  .fifthpage_content{
     width: 80%;
@@ -721,7 +729,8 @@ input:valid {
 
   .sixthpage{
     width: 100%;
-    height: 100vh;
+    height: fit-content;
+    padding-bottom: 110px;
   }
   .sixthpage_content{
     padding-top: 100px;
@@ -743,11 +752,13 @@ input:valid {
    width: 100%;
    /* background: #000; */
    display: flex;
+   
    gap: 40px;
    margin-top: 100px;
   }
   .images{
     width: 90%;
+
     /* background: #e11919; */
   }
   .images img{
@@ -801,9 +812,7 @@ input:valid {
 .expand .active{
     display: block;
 }
-#qqtwo{
-    display: none;
-}
+
 /* end sis page */
 
 /* start seven page */
@@ -839,7 +848,9 @@ input:valid {
 position: relative !important;
 top: 20px !important;
  }
-  
+  .swiper-wrapper{
+    scroll-snap-align:inherit;
+  }
   
   .review-box {
     border-radius: 3px;
@@ -934,7 +945,14 @@ top: 20px !important;
     background: -webkit-linear-gradient(135deg, rgba(250, 29, 143, 1) 0%, rgba(23, 94, 173, 1) 100%);
     background: linear-gradient(135deg, rgba(250, 29, 143, 1) 0%, rgba(23, 94, 173, 1) 100%)
   }
-
+  .swiper-slide {
+    scroll-snap-align:center;
+    flex-shrink: 0;
+    width:fit-content !important;
+    height: 100%;
+    position: relative;
+   
+}
 /* responsive start */
 .menu{
   display: none;
@@ -943,6 +961,15 @@ top: 20px !important;
   display: none;
 }
 @media screen and (max-width: 1410px) {
+  .third_colum{
+    display: flex;
+    flex-direction: column-reverse;
+   }
+  .hero h2{
+    font-size: 3.5rem;
+    width: 100%;
+    line-height: 35px;
+  }
   .row{
     flex-direction: column;
   }

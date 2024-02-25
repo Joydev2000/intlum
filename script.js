@@ -1,32 +1,20 @@
-
-  $(document).ready(function(){
-    $(".qtwo").click(function(){
-      $("#atwo").slideToggle();
+$(document).ready(function () {
+      $('.question').click(function () {   
+        var answer = $(this).next('.ans');
+        answer.slideToggle();
     });
-  });
-
-  var one = 1;
-  function passicon1(){
-    var toggle3 = document.getElementById('qtwo');
-    var toggle4 = document.getElementById('qqtwo');
-    
-if(one == 1){
-    one = 2;
-   toggle3.style.display = "none";
-   toggle4.style.display = "block";
-}
-else{
-    one = 1;
-   toggle3.style.display = "block";
-   toggle4.style.display = "none";	
-}
-};
+    $('.question:first').click();
+});
 
 
+function myFunction(x) {
+    x.classList.toggle("ri-subtract-line");
+    x.classList.toggle("ri-add-line");
+   
+  }
 
 
 var swiper = new Swiper('.swiper-container.swiper-testimonial', {
-    slidesPerView: 3,
     spaceBetween: 30,
     pagination: {
         el: '.swiper-pagination',
