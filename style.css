@@ -70,7 +70,7 @@ nav {
   justify-content: space-between;
 }
 .links ul{
-  display: flex;
+ display: flex;
  gap: 10px;
 }
 .links ul a {
@@ -167,7 +167,7 @@ nav {
 form {
     
     width: 80%;
-    height: 240px;
+    height: max-content;
     background: white;
     z-index: 2;
     position: absolute;
@@ -185,7 +185,7 @@ box-shadow: 9px 25px 54px -23px rgba(0,0,0,0.62);
     gap: 20px;
     padding: 50px 100px;
     justify-content: space-between;
-    align-items: center;
+    
 }
 
 #form .describ h2 {
@@ -211,7 +211,7 @@ box-shadow: 9px 25px 54px -23px rgba(0,0,0,0.62);
     justify-content: space-between;
     gap: 30px;
     height: 100%;
-    width: 380px;
+    width: 90%;
     /* background: #3a3a3a; */
 
 }
@@ -259,18 +259,17 @@ box-shadow: 9px 25px 54px -23px rgba(0,0,0,0.62);
 
 }
 .email {
-    width: 380px;
+    width: 90%;
     height: 100%;
     /* background: #616161; */
     display: flex;
     flex-direction: column;
-    gap: 15%;
-    justify-content: flex-start;
+    gap: 30px;
 }
 
 input::placeholder {
     color: #9d9d9d;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 input:focus,
@@ -281,8 +280,8 @@ input:valid {
 }
 
 #submit {
-    width: 380px;
-    height: 100%;
+    width: 90%;
+   height: auto;
     font-size: 16px;
     color: white;
     font-family: Geomanist;
@@ -757,7 +756,8 @@ input:valid {
    margin-top: 100px;
   }
   .images{
-    width: 90%;
+    width: 100%;
+    height: 100%;
 
     /* background: #e11919; */
   }
@@ -960,7 +960,50 @@ top: 20px !important;
 .close{
   display: none;
 }
+@media screen and (max-width: 1463px) {
+  #form{
+    padding: 34px 18px;
+  }
+  #form .describ h3{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1190px) {
+#submit{
+  height: 110px;
+}
+}
+@media screen and (max-width: 970px) {
+  #form .describ h3{
+    font-size: 40px;
+  }
+  }
+  @media screen and (max-width: 550px) {
+    #form .describ h3{
+      font-size: 35px;
+    }
+    }
+@media screen and (max-width: 1190px) {
+  
+  #form .describ h3{
+    width: 100%;
+  }
+  #form {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 20px;
+      padding: 50px 100px;
+      justify-content: space-between;
+      align-items: center;
+  }
+  
+ 
+}
 @media screen and (max-width: 1410px) {
+  #form{
+    padding: 50px 18px;
+  }
   .third_colum{
     display: flex;
     flex-direction: column-reverse;
