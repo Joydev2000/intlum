@@ -165,12 +165,12 @@ select{
   background: #ef375d;
 }
 
-.hero_botton {
+.hero_botton, .blog_botton {
   color: white;
   font-family: Geomanist;
   font-size: 16px;
   letter-spacing: 2px;
-  border-radius: 10px;
+  border-radius: 5px;
   width: 20%;
   height: 80px;
   border: none;
@@ -180,6 +180,10 @@ select{
   background: linear-gradient(135deg, rgba(250, 29, 143, 1) 0%, rgba(23, 94, 173, 1) 100%);
 
 
+}
+.blog_botton{
+  height: 60px !important;
+  font-size: 14px !important;
 }
 
 #form {
@@ -265,7 +269,10 @@ select{
 
 
 }
+.textarea textarea{
+  border-bottom: 1px solid #484848;
 
+}
 .email {
   width: 90%;
   height: 100%;
@@ -279,18 +286,15 @@ input::placeholder {
   font-size: 14px;
 }
 
-#email input:focus,
-#email input:valid {
-  border-color: #fa1d8f;
-  outline-color: #fa1d8f;
-  /* background: transparent; */
-}
 
+#email input:focus,
+#email input:valid,
+.textarea textarea:focus,
+.textarea textarea:focus,
 .name input:focus,
 .name input:valid {
   border-color: #fa1d8f;
-  outline-color: #fa1d8f;
-  /* background: transparent; */
+ 
 }
 
 
@@ -307,9 +311,23 @@ input::placeholder {
   background: -moz-linear-gradient(135deg, rgba(255, 179, 6, 1) 0%, rgba(108, 164, 47, 1) 76%);
   background: -webkit-linear-gradient(135deg, rgba(255, 179, 6, 1) 0%, rgba(108, 164, 47, 1) 76%);
   background: linear-gradient(135deg, rgba(255, 179, 6, 1) 0%, rgba(108, 164, 47, 1) 76%);
-
-
 }
+
+#last_submit {
+  width: 90%;
+  height: 60px;
+  font-size: 16px;
+  color: white;
+  font-family: Geomanist;
+  letter-spacing: 3px;
+  border-radius: 10px;
+  border: none;
+  background: rgb(255, 179, 6);
+  background: -moz-linear-gradient(135deg, rgba(255, 179, 6, 1) 0%, rgba(108, 164, 47, 1) 76%);
+  background: -webkit-linear-gradient(135deg, rgba(255, 179, 6, 1) 0%, rgba(108, 164, 47, 1) 76%);
+  background: linear-gradient(135deg, rgba(255, 179, 6, 1) 0%, rgba(108, 164, 47, 1) 76%);
+}
+
 
 .first_page {
   background: url("Asset/Home-page.png");
@@ -641,13 +659,16 @@ input::placeholder {
 .fourthpage_content .hthree {
   color: white;
 }
-
+.tenthpage_content .line,
 .fourthpage_content .line {
   background: white;
 }
 
 .fifthpage_content .gadient,
-.fourthpage_content .gadient {
+.fourthpage_content .gadient,
+.gradientt {
+  font-family: LibreBaskerville !important;
+  font-weight: 600 !important;
   font-size: 27px;
   background: #ffe4f2;
   background: linear-gradient(to right, #edd1e0 10%, #2071ce 32%);
@@ -1060,8 +1081,34 @@ hr {
   position: relative;
 
 }
+.fotter_content{
+     display: grid;
+      grid-template-columns:40% repeat(auto-fit, minmax(250px, 1fr));
+      grid-gap: 5px
+   
+ }
+ .linkss ul{
+  padding-left: 0 !important;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+ }
+.linkss ul a{
+ font-size: 18px;
+ font-family: Book;
+ text-decoration: none;
+ color: #9fa0b1;
+ text-align: left;
 
-/* responsive start */
+}
+.linkss ul i{
+  background: transparent;
+ border: 2px solid white;
+  color: white;
+  padding-inline: 8px;
+   padding-block: 4px;
+ font-size: 20px;
+ }
 .menu {
   display: none;
 }
@@ -1148,7 +1195,13 @@ hr {
 }
 .tenthpage{
     background: url("Asset/Home-page6.png");
+   
+    
 }
+.colum{
+  gap: 60px;
+}
+
 @media screen and (max-width: 1463px) {
   #form {
     padding: 34px 18px;
@@ -1160,6 +1213,7 @@ hr {
 }
 
 @media screen and (max-width:910px) {
+  
   #form {
     top: 80vh;
   }
@@ -1170,10 +1224,30 @@ hr {
 }
 
 @media screen and (max-width: 970px) {
+  .fotter_content div{
+    border-right: none
+    ;
+  }
+  .fotter_content{
+    grid-template-columns:100%;  
+}
+.linkss{
+padding-left: 0;
+}
+ #new_form{
+  flex-direction: column;
+ }
+ .colum{
+  flex-direction: column-reverse;
+ gap: 5px;
+ }
+ .textarea textarea{
+  width: 90%;
+  height: 40px;
+ }
   #form .describ h3 {
     font-size: 30px;
   }
-
   .name,
   .email {
     gap: 12px;
@@ -1188,8 +1262,14 @@ hr {
   }
 
 }
-
+@media screen and (max-width: 1610px) {
+  .linkss {
+   
+    margin-top: 20px;
+}
+}
 @media screen and (max-width: 1190px) {
+  
   .flexContent{
     flex-direction: column;
   }
