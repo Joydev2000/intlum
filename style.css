@@ -1081,34 +1081,7 @@ hr {
   position: relative;
 
 }
-.fotter_content{
-     display: grid;
-      grid-template-columns:40% repeat(auto-fit, minmax(250px, 1fr));
-      grid-gap: 5px
-   
- }
- .linkss ul{
-  padding-left: 0 !important;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
- }
-.linkss ul a{
- font-size: 18px;
- font-family: Book;
- text-decoration: none;
- color: #9fa0b1;
- text-align: left;
 
-}
-.linkss ul i{
-  background: transparent;
- border: 2px solid white;
-  color: white;
-  padding-inline: 8px;
-   padding-block: 4px;
- font-size: 20px;
- }
 .menu {
   display: none;
 }
@@ -1195,11 +1168,53 @@ hr {
 }
 .tenthpage{
     background: url("Asset/Home-page6.png");
-   
-    
+      
 }
 .colum{
   gap: 60px;
+}
+
+.fotter_content{
+  display: grid;
+  grid-template-columns:38% repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0px;
+
+}
+.linkss ul{
+padding-left: 0 !important;
+display: flex;
+flex-direction: column;
+gap: 15px;
+}
+.linkss ul a{
+  display: block;
+font-size: 18px;
+font-family: Book;
+text-decoration: none;
+color: #9fa0b1;
+text-align: left;
+
+}
+.linkss ul li{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  
+}
+.linkss ul i{
+background: transparent;
+border: 2px solid;
+border-image: linear-gradient(to top left, #FA1D8F 0%, #175EAD 100%);
+border-image-slice: 1;
+background: #FA1D8F;
+background: linear-gradient(to top left, #FA1D8F 0%, #175EAD 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+padding-inline: 8px;
+padding-block: 4px;
+font-size: 20px;
+height: fit-content;
 }
 
 @media screen and (max-width: 1463px) {
@@ -1211,7 +1226,6 @@ hr {
     width: 100%;
   }
 }
-
 @media screen and (max-width:910px) {
   
   #form {
@@ -1222,7 +1236,6 @@ hr {
     padding-top: 300px;
   }
 }
-
 @media screen and (max-width: 970px) {
   .fotter_content div{
     border-right: none
@@ -1314,7 +1327,6 @@ padding-left: 0;
   }
 
 }
-
 @media screen and (max-width: 1410px) {
   nav {
     padding-inline: 1%;
