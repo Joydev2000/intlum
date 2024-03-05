@@ -54,7 +54,7 @@ nav {
   justify-content: space-between;
   width: 100%;
   margin: 0px auto;
-  height: 80px;
+  height: 65px;
   align-items: center;
   padding-inline: 10%;
   top: 0;
@@ -127,7 +127,7 @@ select {
 
 .hero {
   width: 80%;
-  padding-top: 240px;
+  padding-top: 150px;
   margin: 0px auto;
   display: flex;
   flex-direction: column;
@@ -576,12 +576,12 @@ input::placeholder {
   position: absolute;
   z-index: 2;
   left: 10%;
-  bottom: -10%;
+  top: 90%;
   transition: .5s ease-in-out;
 }
 
 .box:hover .content_box {
-  bottom: 70%;
+ top: 10%;
 }
 
 .box:hover .content_box h2 {
@@ -1102,7 +1102,9 @@ hr {
   color: #2b2a2a;
   font-size: 20px;
 }
-
+.form-select{
+  width: fit-content !important;
+}
 .nav .active {
   height: 100% !important;
   background: transparent !important;
@@ -1189,7 +1191,7 @@ hr {
 
 .fotter_content {
   display: grid;
-  grid-template-columns: 38% repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: 40% repeat(auto-fit, minmax(450px, 1fr));
   gap: 0px;
 
 }
@@ -1281,6 +1283,10 @@ padding-right: 10px;
 
 @media screen and (max-width:910px) {
 
+  .content_box h3{
+    font-size: 20px;
+  }
+
   .hero_botton{
     width: 60%;
     height: 60px;
@@ -1297,8 +1303,26 @@ padding-right: 10px;
 }
 
 @media screen and (max-width: 970px) {
+  
+  .hero{
+    padding-top: 180px;
+    gap: 15px;
+  }
+  .hero h4{
+    color: whitesmoke;
+    line-height: 40px
+  }
+  .hero h2 {
+    width: 100%;
+    font-size: 3.5rem;
+    color: white;
+    line-height: 60px;
+  }
   .btn{
     width: 70%;
+  }
+  .paddding{
+    padding: 0;
   }
   .secondpage_content h3{
     width: 80%;
@@ -1408,6 +1432,18 @@ padding-right: 10px;
 }
 
 @media screen and (max-width: 1410px) {
+  .phone a {
+    font-family: Geomanist-regular;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .phone i {
+    font-family: Geomanist-regular;
+    font-size: 600;
+    font-size: 12px;
+    padding-inline: 7px;
+  }
+  
   nav {
     padding-inline: 1%;
   }
@@ -1421,12 +1457,7 @@ padding-right: 10px;
     flex-direction: column-reverse;
   }
 
-  .hero h2 {
-    /* font-size: 3.5rem; */
-    color: white;
-    width: 100%;
-    line-height: 80px;
-  }
+
 
   .roww {
     flex-direction: column;
@@ -1450,14 +1481,15 @@ padding-right: 10px;
     z-index: 5;
     top: 0;
     right: 0;
-    width: 50%;
+    width: 60%;
     height: 100vh;
   }
 
   .links {
     display: flex;
+    align-items: center;
     flex-direction: column;
-    padding: 10% 0;
+    padding: 40% 0;
     width: 100%;
     height: 100%;
     background: -moz-linear-gradient(135deg, rgba(250, 29, 143, 1) 0%, rgba(23, 94, 173, 1) 100%);
@@ -1466,6 +1498,7 @@ padding-right: 10px;
   }
 
   .links ul {
+    padding: 0;
     color: white;
     display: flex;
     flex-direction: column;
@@ -1500,6 +1533,10 @@ padding-right: 10px;
 }
 
 @media screen and (max-width:710px) {
+  .nithpage_content,.seventhpage_content,.sixthpage_content,.fourthpage_content,.eight_content,.thirdpage {
+    width: 90%;
+  }
+ 
 
   .secondpage_content h3{
     width: 100%;
@@ -1534,4 +1571,9 @@ padding-right: 10px;
   }
 
 
+}
+@media screen and (max-width:460px) {
+  /* .content_box{
+    bottom: -85px;
+  } */
 }
