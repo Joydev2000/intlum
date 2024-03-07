@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -59,7 +60,7 @@
         </div>
     </header>
 
-    <form id="form" action="">
+    <form id="form" action="" >
         <div class="describ">
             <h2 class="htwo">Meet Artflair</h2>
             <h3>Book <span>Free</span> Consulation</h3>
@@ -67,7 +68,7 @@
         <div class="name" id="name">
             <input type="text" placeholder="Enter Your Name" required>
             <input id="number" type="number" placeholder="Enter Your Number" required>
-            <label><input type="checkbox" name=""> <span>I agree to the <a href="#">Terms and
+            <label><input type="checkbox" name=""> <span>I agree to the <a class="text-blue-800" href="#">Terms and
                         Condition</a></span></label>
         </div>
         <div id="email" class="email">
@@ -142,7 +143,7 @@
 
     <div class="thirdpage pb-20">
         <div class="thirdpage_content">
-            <div class="first_box box">
+            <div class="first_box box left" data-aos="zoom-in-up">
                 <h2 class="htwo">
                     Contact us
                 </h2>
@@ -156,7 +157,7 @@
                     to creating a unified blend of your style and
                     personality within the boundaries of your home. </p>
             </div>
-            <div class="second_box box">
+            <div class="second_box box right" data-aos="fade-up" data-aos-delay="200">
                 <img src="Asset\image_3.png" alt="">
                 <div class="content_box">
                     <h3>Ceiling Painting</h3>
@@ -172,7 +173,7 @@
                 </div>
 
             </div>
-            <div class="box">
+            <div class="box left" data-aos="fade-up" data-aos-delay="400">
                 <img src="Asset\image_4.png" alt="">
                 <div class="content_box">
                     <h3>Interior Wall Painting</h3>
@@ -187,7 +188,7 @@
                     <i class="ri-arrow-right-up-line"></i>
                 </div>
             </div>
-            <div class="box">
+            <div class="box right" data-aos="fade-up" data-aos-delay="200">
                 <img src="Asset\image_5.png" alt="">
                 <div class="content_box">
                     <h3>Trims & Moldings</h3>
@@ -202,7 +203,7 @@
                     <i class="ri-arrow-right-up-line"></i>
                 </div>
             </div>
-            <div class="box">
+            <div class="box left" data-aos="fade-up" data-aos-delay="400">
                 <img src="Asset\image_6.png" alt="">
                 <div class="content_box">
                     <h3>Texture & Faux Finish Painting</h3>
@@ -217,7 +218,7 @@
                     <i class="ri-arrow-right-up-line"></i>
                 </div>
             </div>
-            <div class="box">
+            <div class="box right" data-aos="fade-up" data-aos-delay="600">
                 <img src="Asset\image_7.png" alt="">
                 <div class="content_box">
                     <h3>Exterior Wall Painting</h3>
@@ -232,7 +233,7 @@
                     <i class="ri-arrow-right-up-line"></i>
                 </div>
             </div>
-            <div class="box">
+            <div class="box left" data-aos="fade-up" data-aos-delay="200">
                 <img src="Asset\image_8.png" alt="">
                 <div class="content_box">
                     <h3>Gate & Fence Painting</h3>
@@ -247,7 +248,7 @@
                     <i class="ri-arrow-right-up-line"></i>
                 </div>
             </div>
-            <div class="box">
+            <div class="box right" data-aos="fade-up" data-aos-delay="400">
                 <img src="Asset\image_9.png" alt="">
                 <div class="content_box">
                     <h3>Deck & Patio Painting</h3>
@@ -262,7 +263,7 @@
                     <i class="ri-arrow-right-up-line"></i>
                 </div>
             </div>
-            <div class="box">
+            <div class="box left" data-aos="fade-up" data-aos-delay="600">
                 <img src="Asset\image_10.png" alt="">
                 <div class="content_box">
                     <h3>Weatherproof & Sealing</h3>
@@ -321,8 +322,8 @@
 
                 </ul>
                 <div class="tab-content" id="pills-tabContent">
-                    <div class="tab-pane fade show active " id="pills-home" role="tabpanel"
-                        aria-labelledby="pills-home-tab" tabindex="0">
+                    <div class=" tab-pane fade show active " id="pills-home" role="tabpanel"
+                        aria-labelledby="pills-home-tab" tabindex="0" >
                         <div class="flex w-full justify-between">
                             <h3 class=" text-2xl">Outdoor Painting</h3>
                             <select class="form-select w-40">
@@ -333,7 +334,7 @@
                             </select>
                         </div>
                         <div class="boxx_content w-full mt-10">
-                            <div class="boxx">
+                            <div class="boxx left" data-aos="fade-up">
                                 <img src="Asset\image_4.png" alt="">
                                 <div class="content_boxx flex justify-between w-[95%] ">
                                     <h3 class="pb-4">Interior Wall Painting</h3>
@@ -343,7 +344,17 @@
                                 </div>
 
                             </div>
-                            <div class="boxx">
+                            <div class="boxx right" data-aos="fade-up" data-aos-delay="200">
+                                <img src="Asset\image_4.png" alt="">
+                                <div class="content_boxx flex justify-between w-[95%] ">
+                                    <h3 class="pb-4">Interior Wall Painting</h3>
+                                    <div class="icon">
+                                        <i class="ri-arrow-right-up-line"></i>
+                                    </div>
+                                </div>
+
+                            </div> 
+                            <div class="boxx left" data-aos="fade-up">
                                 <img src="Asset\image_4.png" alt="">
                                 <div class="content_boxx flex justify-between w-[95%] ">
                                     <h3 class="pb-4">Interior Wall Painting</h3>
@@ -353,17 +364,7 @@
                                 </div>
 
                             </div>
-                            <div class="boxx">
-                                <img src="Asset\image_4.png" alt="">
-                                <div class="content_boxx flex justify-between w-[95%] ">
-                                    <h3 class="pb-4">Interior Wall Painting</h3>
-                                    <div class="icon">
-                                        <i class="ri-arrow-right-up-line"></i>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="boxx">
+                            <div class="boxx right" data-aos="fade-up" data-aos-delay="200">
                                 <img src="Asset\image_4.png" alt="">
                                 <div class="content_boxx flex justify-between w-[95%] ">
                                     <h3 class="pb-4">Interior Wall Painting</h3>
@@ -455,7 +456,7 @@
             <p>While choosing Artflare for your home color paint solution, we extend our hand to support your dream and
                 offer our excellence and expertise. </p>
             <div class="box_content">
-                <div class="fourbox">
+                <div class="fourbox" data-aos="fade-up" >
                     <div class="boxcontent">
                         <img src="Asset\brushicon.png" alt="">
                         <h2>Experienced
@@ -469,7 +470,7 @@
                         </h3>
                     </div>
                 </div>
-                <div class="fourbox">
+                <div class="fourbox" data-aos="fade-up" data-aos-delay="200">
                     <div class="boxcontent">
                         <img src="Asset\brushicon.png" alt="">
                         <h2>Experienced
@@ -483,7 +484,7 @@
                         </h3>
                     </div>
                 </div>
-                <div class="fourbox">
+                <div class="fourbox" data-aos="fade-up" data-aos-delay="300">
                     <div class="boxcontent">
                         <img src="Asset\brushicon.png" alt="">
                         <h2>Experienced
@@ -497,7 +498,7 @@
                         </h3>
                     </div>
                 </div>
-                <div class="fourbox">
+                <div class="fourbox" data-aos="fade-up" data-aos-delay="400">
                     <div class="boxcontent">
                         <img src="Asset\brushicon.png" alt="">
                         <h2>Experienced
@@ -511,7 +512,7 @@
                         </h3>
                     </div>
                 </div>
-                <div class="fourbox">
+                <div class="fourbox" data-aos="fade-up" data-aos-delay="500">
                     <div class="boxcontent">
                         <img src="Asset\brushicon.png" alt="">
                         <h2>Experienced
@@ -666,7 +667,7 @@
     </div>
 
     <div class="seventhpage">
-        <div class="seventhpage_content">
+        <div class="seventhpage_content pb-[100px]">
             <h2 class="htwo">
                 Contact us
             </h2>
@@ -677,237 +678,211 @@
             <p>Every wall has a story – that’s what we believe at Artflare. Our indoor painting services are dedicated
                 to creating a unified blend of your style and personality within the boundaries of your home. </p>
 
+
+                 
+                    <div class="section-testmonials pt-20">
+                        <div class="test-arrowbox">
+
+                            <div class="swiper-button-prev-test">
+                                <button>
+                                    <i class="ri-arrow-left-s-line"></i>
+            
+                                </button>
+                            </div>
+                            <div class="swiper-button-next-test">
+                                <button>
+                                    <i class="ri-arrow-right-s-line"></i>
+                                </button>
+            
+            
+                            </div>
+                        </div>
+            
+
+                        <!-- Slider main container -->
+                        <div class="swiper-testmonials">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="review-box">
+                                        <div class="feedback">
+                                            <p>Thanks, Artflare for transforming my
+                                                home to a house I’ve only watched
+                                                in movies.</p>
+                                        </div>
+                                        <div>
+                                            <hr>
+                                            <div class="feddback_user">
+                                                <div class="userimage">
+                                                    <img src="Asset\feddback.png" alt="">
+                                                </div>
+                                                <div class="userdetails">
+                                                    <h2>Kunal Basu</h2>
+                                                    <h4>
+                                                        Busmissman
+                                                    </h4>
+                                                    <span>
+                                                        <i class="ri-star-fill"></i>
+                                                        <i class="ri-star-fill"></i>
+                                                        <i class="ri-star-fill"></i>
+                                                        <i class="ri-star-fill"></i>
+                                                        <i class="ri-star-fill"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+            
+            
+                                        </div>
+            
+                                    </div>
+                                </div>
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="review-box">
+                                        <div class="feedback">
+                                            <p>Thanks, Artflare for transforming my
+                                                home to a house I’ve only watched
+                                                in movies.</p>
+                                        </div>
+                                        <div>
+                                            <hr>
+                                            <div class="feddback_user">
+                                                <div class="userimage">
+                                                    <img src="Asset\feddback.png" alt="">
+                                                </div>
+                                                <div class="userdetails">
+                                                    <h2>Kunal Basu</h2>
+                                                    <h4>
+                                                        Busmissman
+                                                    </h4>
+                                                    <span>
+                                                        <i class="ri-star-fill"></i>
+                                                        <i class="ri-star-fill"></i>
+                                                        <i class="ri-star-fill"></i>
+                                                        <i class="ri-star-fill"></i>
+                                                        <i class="ri-star-fill"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+            
+            
+                                        </div>
+            
+                                    </div>  
+                                </div>
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="review-box">
+                                        <div class="feedback">
+                                            <p>Thanks, Artflare for transforming my
+                                                home to a house I’ve only watched
+                                                in movies.</p>
+                                        </div>
+                                        <div>
+                                            <hr>
+                                            <div class="feddback_user">
+                                                <div class="userimage">
+                                                    <img src="Asset\feddback.png" alt="">
+                                                </div>
+                                                <div class="userdetails">
+                                                    <h2>Kunal Basu</h2>
+                                                    <h4>
+                                                        Busmissman
+                                                    </h4>
+                                                    <span>
+                                                        <i class="ri-star-fill"></i>
+                                                        <i class="ri-star-fill"></i>
+                                                        <i class="ri-star-fill"></i>
+                                                        <i class="ri-star-fill"></i>
+                                                        <i class="ri-star-fill"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+            
+            
+                                        </div>
+            
+                                    </div>
+                                </div>
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="review-box">
+                                        <div class="feedback">
+                                            <p>Thanks, Artflare for transforming my
+                                                home to a house I’ve only watched
+                                                in movies.</p>
+                                        </div>
+                                        <div>
+                                            <hr>
+                                            <div class="feddback_user">
+                                                <div class="userimage">
+                                                    <img src="Asset\feddback.png" alt="">
+                                                </div>
+                                                <div class="userdetails">
+                                                    <h2>Kunal Basu</h2>
+                                                    <h4>
+                                                        Busmissman
+                                                    </h4>
+                                                    <span>
+                                                        <i class="ri-star-fill"></i>
+                                                        <i class="ri-star-fill"></i>
+                                                        <i class="ri-star-fill"></i>
+                                                        <i class="ri-star-fill"></i>
+                                                        <i class="ri-star-fill"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+            
+            
+                                        </div>
+            
+                                    </div>
+                                </div>
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <div class="review-box">
+                                        <div class="feedback">
+                                            <p>Thanks, Artflare for transforming my
+                                                home to a house I’ve only watched
+                                                in movies.</p>
+                                        </div>
+                                        <div>
+                                            <hr>
+                                            <div class="feddback_user">
+                                                <div class="userimage">
+                                                    <img src="Asset\feddback.png" alt="">
+                                                </div>
+                                                <div class="userdetails">
+                                                    <h2>Kunal Basu</h2>
+                                                    <h4>
+                                                        Busmissman
+                                                    </h4>
+                                                    <span>
+                                                        <i class="ri-star-fill"></i>
+                                                        <i class="ri-star-fill"></i>
+                                                        <i class="ri-star-fill"></i>
+                                                        <i class="ri-star-fill"></i>
+                                                        <i class="ri-star-fill"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+            
+            
+                                        </div>
+            
+                                    </div>
+                                </div>
+                    
+                    
+                            </div>
+                        </div>
+                    
+                  </div>
+
+
         </div>
-        <div class="swipermain">
-            <div class="test-arrowbox">
-
-                <div class="swiper-button-prev-test">
-                    <button>
-                        <i class="ri-arrow-left-s-line"></i>
-
-                    </button>
-                </div>
-                <div class="swiper-button-next-test">
-                    <button>
-                        <i class="ri-arrow-right-s-line"></i>
-                    </button>
-
-
-                </div>
-            </div>
-
-            <div class="swiper-container swiper-testimonial">
-
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="review-box">
-                            <div class="feedback">
-                                <p>Thanks, Artflare for transforming my
-                                    home to a house I’ve only watched
-                                    in movies.</p>
-                            </div>
-                            <div>
-                                <hr>
-                                <div class="feddback_user">
-                                    <div class="userimage">
-                                        <img src="Asset\feddback.png" alt="">
-                                    </div>
-                                    <div class="userdetails">
-                                        <h2>Kunal Basu</h2>
-                                        <h4>
-                                            Busmissman
-                                        </h4>
-                                        <span>
-                                            <i class="ri-star-fill"></i>
-                                            <i class="ri-star-fill"></i>
-                                            <i class="ri-star-fill"></i>
-                                            <i class="ri-star-fill"></i>
-                                            <i class="ri-star-fill"></i>
-                                        </span>
-                                    </div>
-                                </div>
-
-
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="review-box">
-                            <div class="feedback">
-                                <p>Thanks, Artflare for transforming my
-                                    home to a house I’ve only watched
-                                    in movies.</p>
-                            </div>
-                            <div>
-                                <hr>
-                                <div class="feddback_user">
-                                    <div class="userimage">
-                                        <img src="Asset\feddback.png" alt="">
-                                    </div>
-                                    <div class="userdetails">
-                                        <h2>Kunal Basu</h2>
-                                        <h4>
-                                            Busmissman
-                                        </h4>
-                                        <span>
-                                            <i class="ri-star-fill"></i>
-                                            <i class="ri-star-fill"></i>
-                                            <i class="ri-star-fill"></i>
-                                            <i class="ri-star-fill"></i>
-                                            <i class="ri-star-fill"></i>
-                                        </span>
-                                    </div>
-                                </div>
-
-
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="review-box">
-                            <div class="feedback">
-                                <p>Thanks, Artflare for transforming my
-                                    home to a house I’ve only watched
-                                    in movies.</p>
-                            </div>
-                            <div>
-                                <hr>
-                                <div class="feddback_user">
-                                    <div class="userimage">
-                                        <img src="Asset\feddback.png" alt="">
-                                    </div>
-                                    <div class="userdetails">
-                                        <h2>Kunal Basu</h2>
-                                        <h4>
-                                            Busmissman
-                                        </h4>
-                                        <span>
-                                            <i class="ri-star-fill"></i>
-                                            <i class="ri-star-fill"></i>
-                                            <i class="ri-star-fill"></i>
-                                            <i class="ri-star-fill"></i>
-                                            <i class="ri-star-fill"></i>
-                                        </span>
-                                    </div>
-                                </div>
-
-
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="review-box">
-                            <div class="feedback">
-                                <p>Thanks, Artflare for transforming my
-                                    home to a house I’ve only watched
-                                    in movies.</p>
-                            </div>
-                            <div>
-                                <hr>
-                                <div class="feddback_user">
-                                    <div class="userimage">
-                                        <img src="Asset\feddback.png" alt="">
-                                    </div>
-                                    <div class="userdetails">
-                                        <h2>Kunal Basu</h2>
-                                        <h4>
-                                            Busmissman
-                                        </h4>
-                                        <span>
-                                            <i class="ri-star-fill"></i>
-                                            <i class="ri-star-fill"></i>
-                                            <i class="ri-star-fill"></i>
-                                            <i class="ri-star-fill"></i>
-                                            <i class="ri-star-fill"></i>
-                                        </span>
-                                    </div>
-                                </div>
-
-
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="review-box">
-                            <div class="feedback">
-                                <p>Thanks, Artflare for transforming my
-                                    home to a house I’ve only watched
-                                    in movies.</p>
-                            </div>
-                            <div>
-                                <hr>
-                                <div class="feddback_user">
-                                    <div class="userimage">
-                                        <img src="Asset\feddback.png" alt="">
-                                    </div>
-                                    <div class="userdetails">
-                                        <h2>Kunal Basu</h2>
-                                        <h4>
-                                            Busmissman
-                                        </h4>
-                                        <span>
-                                            <i class="ri-star-fill"></i>
-                                            <i class="ri-star-fill"></i>
-                                            <i class="ri-star-fill"></i>
-                                            <i class="ri-star-fill"></i>
-                                            <i class="ri-star-fill"></i>
-                                        </span>
-                                    </div>
-                                </div>
-
-
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="review-box">
-                            <div class="feedback">
-                                <p>Thanks, Artflare for transforming my
-                                    home to a house I’ve only watched
-                                    in movies.</p>
-                            </div>
-                            <div>
-                                <hr>
-                                <div class="feddback_user">
-                                    <div class="userimage">
-                                        <img src="Asset\feddback.png" alt="">
-                                    </div>
-                                    <div class="userdetails">
-                                        <h2>Kunal Basu</h2>
-                                        <h4>
-                                            Busmissman
-                                        </h4>
-                                        <span>
-                                            <i class="ri-star-fill"></i>
-                                            <i class="ri-star-fill"></i>
-                                            <i class="ri-star-fill"></i>
-                                            <i class="ri-star-fill"></i>
-                                            <i class="ri-star-fill"></i>
-                                        </span>
-                                    </div>
-                                </div>
-
-
-                            </div>
-
-                        </div>
-                    </div>
-
-
-                </div>
-
-                <!-- <div class="swiper-pagination"></div> -->
-
-
-
-
-            </div>
-        </div>
+        
 
     </div>
 
@@ -1081,6 +1056,15 @@
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 200,
+        easing: 'ease',
+        duration: 500
+
+      });
+    </script>
     <script src="script.js"></script>
 </body>
 

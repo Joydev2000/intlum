@@ -34,7 +34,39 @@
   font-family: LibreBaskerville;
   src: url("Asset/font/LibreBaskerville-Regular.woff");
 }
+/* width */
+::-webkit-scrollbar {
+	width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px rgb(248, 248, 248); 
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
 
+  }
+   /* Handle */
+::-webkit-scrollbar-thumb {
+	background: linear-gradient(145deg, #ff014f, #d11414); 
+	border-radius: 10px;
+  cursor: pointer;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+	background: #b30000; 
+  }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
 html,
 body {
   height: 100%;
@@ -937,7 +969,7 @@ input::placeholder {
 /* start seven page */
 .seventhpage {
   width: 100%;
-  height: 100vh;
+  height: fit-content;
   background: #f3e8db;
 }
 
@@ -956,13 +988,58 @@ input::placeholder {
 }
 
 
-.swipermain {
-  width: 80%;
+.section-testmonials {
+  width:100% !important;
   overflow-y: hidden;
   margin: auto;
+  position: relative;
 }
 
-.swipermain::-webkit-scrollbar {
+
+.test-arrowbox {
+  display: flex;
+  gap: 30px;
+  position: absolute;
+  top: 10px;
+  right: 1%;
+  z-index: 2;
+
+  /* background: #175EAD; */
+}
+
+.test-arrowbox button {
+  color: rgb(39, 36, 36);
+  font-size: 30px;
+  border-radius: 5px;
+  width: 60px;
+  height: 50px;
+  border: 1px solid #fa1d8f;
+  background: transparent;
+
+}
+
+.test-arrowbox button:hover {
+  color: white;
+  font-size: 30px;
+  border-radius: 5px;
+  border: none;
+  background: -moz-linear-gradient(135deg, rgba(250, 29, 143, 1) 0%, rgba(23, 94, 173, 1) 100%);
+  background: -webkit-linear-gradient(135deg, rgba(250, 29, 143, 1) 0%, rgba(23, 94, 173, 1) 100%);
+  background: linear-gradient(135deg, rgba(250, 29, 143, 1) 0%, rgba(23, 94, 173, 1) 100%)
+}
+.swiper-testmonials{
+  width: 100%;
+}
+
+.swiper-wrapper{
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+.swiper-wrapper{
+  width: 100% !important;
+}
+.section-testmonials::-webkit-scrollbar {
   display: none;
 }
 
@@ -1043,49 +1120,10 @@ hr {
   font-weight: 200;
 }
 
-.swiper-testimonial {
-  padding: 100px 20px;
-  padding-top: 30px;
-}
 
-.test-arrowbox {
-  display: flex;
-  gap: 30px;
-  position: relative;
-  top: 10px;
-  left: 88%;
-
-  /* background: #175EAD; */
-}
-
-.test-arrowbox button {
-  color: rgb(39, 36, 36);
-  font-size: 30px;
-  border-radius: 5px;
-  width: 60px;
-  height: 50px;
-  border: 1px solid #fa1d8f;
-  background: transparent;
-
-}
-
-.test-arrowbox button:hover {
-  color: white;
-  font-size: 30px;
-  border-radius: 5px;
-  border: none;
-  background: -moz-linear-gradient(135deg, rgba(250, 29, 143, 1) 0%, rgba(23, 94, 173, 1) 100%);
-  background: -webkit-linear-gradient(135deg, rgba(250, 29, 143, 1) 0%, rgba(23, 94, 173, 1) 100%);
-  background: linear-gradient(135deg, rgba(250, 29, 143, 1) 0%, rgba(23, 94, 173, 1) 100%)
-}
-
-.swiper-slide {
-  scroll-snap-align: center;
-  flex-shrink: 0;
-  width: fit-content !important;
-  height: 100%;
-  position: relative;
-
+.swiper-testmonials .swiper-slide-active {
+  filter: blur(0px) !important;
+  transform: scale(1) !important;
 }
 
 .menu {
@@ -1422,7 +1460,7 @@ padding-right: 10px;
   #form {
     display: grid;
     place-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 0px;
     padding: 50px 100px;
     justify-content: space-between;
