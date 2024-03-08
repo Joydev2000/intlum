@@ -64,3 +64,56 @@ $(document).ready(function () {
         $(".left, .right").attr("data-aos-delay", "0");
     }
   });
+
+  gsap.from("#form",{
+     y: "-100vh",
+     duration:1.2,
+     ease: "power2.out"
+  });
+  gsap.from(".phone",{
+    x: 100,
+    opacity:0,
+    duration :1,
+    ease: "power2.out"
+  });
+
+  var time = gsap.timeline();
+  time.from(".logo",{
+    x: -100,
+    opacity:0,
+    duration :1,
+    ease: "power2.out"
+  });
+  time.from(".links ul a",{
+    y : 50,
+    opacity:0,
+    duration :.8,
+    ease: "power2.out",
+    stagger: 0.2
+  });
+  time.from(".hero h2,.line,.hero h4,.hero_botton",{
+    y : 50,
+    opacity:0,
+    duration :.8,
+    ease: "power2.out",
+    stagger: 0.1
+  })
+
+  // time.from(".line",{
+  //   y : 50,
+  //   opacity:0,
+  //   duration :.5,
+  //   ease: "power2.out",
+  // })
+  // time.from(".hero h4",{
+  //   y : 50,
+  //   opacity:0,
+  //   duration :.5,
+  //   ease: "power2.out",
+  // })
+  // time.from(".hero_botton",{
+  //   scale : 0,
+  //   opacity:0,
+  //   duration :.5,
+  //   ease: "power2.out",
+  // })
